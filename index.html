@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Hello,I'm a Developer</h1>
+            <p class="hero-subtitle"> I build minimal, fast and thoughtful web experie</p>
+            <a href="#projects" class="hero-cta">View Projects</a>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <p class="section-text">
+                    I'm a passionate developer focused on crafting clean, user-friendly interfaces
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="projects-title">Project One</h3>
+                        <p class="project-desc">A sleek web app  built with mordern tools and a focus on performances</p>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="projects-title">Project One</h3>
+                        <p class="project-desc">A sleek web app  built with mordern tools and a focus on performances</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skill-tag">HTML</li>
+                    <li class="skill-tag">CSS</li>
+                    <li class="skill-tag">JAVASCRIPT</li>
+                    <li class="skill-tag">TAILWIND</li>
+                    <li class="skill-tag">RESPONSIVE DESIGN</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <form  id="contact-form" class="contact-form" no validate>
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+
+                    <label for="name" class="visually-hidden">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+
+                    
+                    <button type="submit">Send Message</button>
+                    <p id="form-status" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span>Personal Portfolio. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent=newDate().getFullYear()
+    </script>
+</body>
+</html>
